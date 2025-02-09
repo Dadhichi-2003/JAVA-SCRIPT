@@ -1,0 +1,58 @@
+body {
+   
+    background: url('/images/pexels-anntarazevich-5425629.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    width: 70%;
+}
+
+.quote-box {
+    background: #887259;
+   
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#author{
+
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "SUSE", serif;
+
+}
+
+#quote{
+    font-size: 15px;
+    font-family: "Roboto Mono", serif;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    background: #212f36;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #4a575e;
+    color:ghostwhite ;
+    transition: 0.3s;
+}

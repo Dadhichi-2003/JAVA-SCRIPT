@@ -1,0 +1,90 @@
+:root{
+
+    --bgcolor:#2c1b0c;
+    --fontcolor:#e9dab3;
+    
+
+}
+html{
+    background-image: url(/images/pexels-pixabay-459335.jpg);
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container{
+    background-color: var(--bgcolor);
+    color: var(--fontcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 150px;
+    padding: 20px 50px;
+    border-radius: 25px;
+    width: 100vh;
+}
+
+
+.container>h2{
+    font-size: 50px;
+    
+}
+
+.question-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: "Roboto Mono", serif;
+    width: 100vh;
+}
+
+.question-icon>button{
+
+        font-size: 30px;
+        border: none;
+        background-color: var(--bgcolor);
+        color: var(--fontcolor);
+
+}
+.question-icon>p{
+    font-size: 20px;
+   
+}
+
+/* .answer{
+
+    text-align: justify;
+    padding: 0px 10px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ead8a9a4;
+    font-family: "SUSE", serif;
+    
+
+}
+
+.toggle{
+
+    display: none;
+  
+
+} */
+
+.answer {
+    max-height: 0;  /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 10px; /* Keep initial padding */
+}
+
+.toggle {
+    display: block; /* Ensure it's visible */
+    max-height: 500px; /* Adjust this value based on your content */
+    padding: 10px 10px; /* Add spacing for better appearance */
+}
